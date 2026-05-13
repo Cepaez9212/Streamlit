@@ -5,7 +5,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 
 # Configura tu llave directamente aquí para la prueba
-os.environ["GOOGLE_API_KEY"] = "PEGA_AQUI_TU_API_KEY"
+os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 
 st.title("🤖 Mi Chatbot con Gemini")
 
