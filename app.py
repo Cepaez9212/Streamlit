@@ -14,7 +14,7 @@ if "chatbot" not in st.session_state:
     st.session_state.memoria = ConversationBufferMemory()
     
     # IMPORTANTE: Usa el nombre del modelo que te funcionó en el paso anterior
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
     
     st.session_state.chatbot = ConversationChain(
         llm=llm, 
